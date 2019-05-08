@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Together Taxi</title>
+        <style>
+            header{
+                border-bottom:2px solid orange;
+                width:100%;
+                margin:0;
+            }
+            body{
+                margin:0;
+            }
+            #wrap{
+                width:1100px;
+                height:1100px;
+                margin:auto;
+            }
+            header #mainlist{
+                text-align:center;
+            }
+            header ul .mainlist{
+                display:inline;
+                list-style: none;
+                padding-right:55px;
+                font-size:20px;
+                font-weight:bold;
+            }
+            header ul .mainlist a{
+                text-decoration: none;
+                color:black;
+            }
+
+            header ul .sublist{
+                float:right;
+                display:inline;
+                list-style:none;
+                padding-right:30px;
+                font-weight:bold;
+                font-size:13px;
+            }
+
+            header ul .sublist a{
+                text-decoration: none;
+                color:black;
+            }
+            section{
+                width:100%;
+            }
+            footer{
+                margin-top:30px;
+                border-top:1px solid;
+                padding-bottom:30px;
+                clear:both;
+            }
+            footer #footer{
+                padding-left:17.5%;
+            }
+            div nav{
+                float:left;
+                margin-top:30px;
+                width:200px;
+                height:500px;
+                text-align: center;
+                margin-bottom:30px;
+                font-size:20px;
+            }
+            div nav #name{
+                border:1px solid gray;
+                border-right:0px;
+                padding-top:35px;
+                padding-bottom:35px;
+                color:orangered;
+                font-weight:bold;
+            }
+            div .helpm{
+                border-bottom:1px solid gray;
+                border-left:1px solid gray;
+                padding-top:20px;
+                padding-bottom:20px;
+            }
+            div .helpm a{
+                color:black;
+                text-decoration: none;
+            }
+            div .helpm a:hover{
+                font-size:23px;
+                font-weight:bold;
+            }
+            article{
+                padding-top:50px;
+                padding-left:50px;
+                width:800px;
+                height:1090px;
+                float:left;
+                border: 1px solid gray;
+                margin-bottom:30px;
+                margin-top:30px;
+            }
+            section div#search{
+                width:630px;
+                text-align: center;
+                margin:auto;
+                border:2px solid gray;
+                padding:30px 60px 30px 60px;
+                float:left;
+                margin-bottom:50px;
+            }
+            input#searchbox{
+                width:300px;
+                padding-top:7px;
+                padding-bottom:5px;
+                
+            }
+            section #btn_search{
+                width:40px;
+                height:32px;
+                border:0px;
+                background-color: orange;
+                color:black;
+            }
+            section div#table{
+                clear:both;
+                text-align: center;
+            }
+            section table{
+                border-top: 2px solid black;
+                border-bottom: 1px solid gray;
+            }
+            section table tr#thead{
+                border-bottom:1px solid gray;
+            }
+            section table .num{
+                
+                width:85px;
+            }
+            section table .title{
+                width:658px;
+            }
+            section table th, td{
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+            section table a{
+                color:black;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <header>
+            <ul id=mainlist>
+                <li class=mainlist><a href=""><img src="img/TT2.PNG" width=100px;></a></li>
+                <li class=mainlist><a href="">마이페이지</a></li>
+                <li class=mainlist><a href="">고객센터</a></li>
+                <li class=mainlist><a href="">게시판</a></li>
+                <li class=sublist><a href="">회원가입</a></li>
+                <li class=sublist><a href="">로그인</a></li>
+            </ul>
+        </header>
+        <div id=wrap>
+            <nav>
+                <div id=name>
+                    고객센터
+                </div>
+
+                <div class=helpm><a href="#">
+                    FAQ
+                </div>
+                </a>
+
+                <div class=helpm><a href="#">
+                    QnA
+                </div>
+                </a>
+                <div class=helpm><a href="#">
+                    공지사항
+                </div>
+                </a>
+            </nav>
+
+            <article>
+
+                <section>
+                    <h1>FAQ</h1>
+                    <div id=search>
+                        <img src="img/serch.PNG"><input type="search" id="searchbox" placeholder="키워드 검색"><input type="button" id="btn_search" value="검색">
+                    </div>
+                    <br>
+                    <div id=table>
+                        <table id=T_FAQ>
+
+                                <tr id="thead">
+                                    <th class=num>번호</th>
+                                    <th class=title>제목</th>
+                                </tr>
+                                <tr>
+                                    <td class=num>1</td>
+                                    <td class=title><a href="">알고싶은것?</a></td>
+                                </tr>
+                                <tr>
+                                    <td class=num>2</td>
+                                    <td class=title>궁금한것?</td>
+                                </tr>
+                        </table>
+                    </div>
+                    
+                </section>
+
+            </article>
+
+        </div>
+        
+        <footer>
+            <div id=footer>
+                사업자등록:#######
+            </div>
+        </footer>
+    
+    </body>
+
+</html>
